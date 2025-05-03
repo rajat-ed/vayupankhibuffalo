@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 600px;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#title {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#score {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#difficulty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff00;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#clipboardMessage {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00ff00;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#namePrompt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffd700;
+    padding: 20px;
+    border: 4px solid #000;
+    text-align: center;
+    color: #000000;
+}
+
+#namePrompt h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#namePrompt p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#playerName {
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#startBtn {
+    background-color: #00ff00;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 10px;
+}
+
+#startBtn:hover {
+    background-color: #00cc00;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff4040;
+    padding: 20px;
+    border: 4px solid #000;
+    text-align: center;
+    color: #ffffff;
+}
+
+#gameOver h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+#gameOver p {
+    font-size: 24px;
+}
+
+#shareBtn, #restartBtn {
+    background-color: #00ff00;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    margin: 5px;
+}
+
+#shareBtn:hover, #restartBtn:hover {
+    background-color: #00cc00;
+}
+
+#credit {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    #game-container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #title {
+        font-size: 16px;
+    }
+}
