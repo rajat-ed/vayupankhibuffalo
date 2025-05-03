@@ -324,7 +324,7 @@ startBtn.addEventListener('click', () => {
 // Share result
 shareBtn.addEventListener('click', () => {
     try {
-        const text = `${playerName} scored ${score} in Vayupankhi Buffalo! 🐃✈️ Fly to the theatre to catch the show! 🎭 #VayupankhiBuffalo`;
+        const text = `${playerName} scored ${score} in Vayupankhi Buffalo! 🐃✈️ Visit Kausi Theater,Teku to catch the show! 🎭 #VayupankhiBuffalo`;
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(text).then(() => {
                 console.log('Text copied to clipboard');
