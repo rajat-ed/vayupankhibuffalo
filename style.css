@@ -149,11 +149,12 @@ body {
 
 #credit {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px; /* Increased from 10px to avoid clipping */
     left: 50%;
     transform: translateX(-50%);
     color: #ffffff;
     font-size: 16px;
+    z-index: 10; /* Ensure text is above canvas */
 }
 
 .hidden {
@@ -167,5 +168,8 @@ body {
     }
     #title {
         font-size: 16px;
+    }
+    #credit {
+        font-size: 14px; /* Reduced for smaller screens */
     }
 }
